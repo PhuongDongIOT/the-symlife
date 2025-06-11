@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
 .writing-vertical-lr {
-    writing-mode: initial;
+    writing-mode: vertical-lr;
 }
 
 .writing-vertical-rl {
-    writing-mode: initial;
+    writing-mode: vertical-rl;
 }
 
 @media screen and (min-width: 920px) {
@@ -18,4 +18,3 @@
     }
 
 }
-

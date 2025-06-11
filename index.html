@@ -10,6 +10,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="carousel.css">
     <link rel="stylesheet" href="custom.css">
@@ -31,28 +33,71 @@
 
 
 <body>
-    <main class=" bg-gradient-to-br from-amber-50 to-blue-100  ">
-        <div class="h-screen bg-transparent mb-96 relative z-0">
-            <img src="images/symlife-bg-1-1-cusex.png" class="w-screen h-full" alt="" srcset="">
-            <div class="">
-
+    <main class=" bg-gradient-to-br from-amber-50 to-blue-100 px-2 lg:px-0">
+        <div class="lg:h-screen bg-transparent mb-4 lg:mb-96 relative z-0">
+            <img src="images/symlife-bg-1-1-cusex.png" class="w-screen lg:h-full" alt="" srcset="">
+            <div
+                class="mt-8 lg:mt-0 lg:absolute lg:top-24 lg:right-12 text-lora text-amber-400 text-shadow-amber-200 text-shadow-2xs text-center">
+                <h2 class="uppercase text-6xl font-bold">symlife</h2>
+                <p class="uppercase text-4xl font-bold">Bản Giao hưởng cuộc sống</p>
+                <div class="mt-4 flex justify-center gap-4">
+                    <div class="text-6xl font-bold">Giá</div>
+                    <div class="col-span-2 flex">
+                        <div class="writing-vertical-rl">Chỉ từ</div>
+                        <p class="text-8xl">40</p>
+                    </div>
+                    <div>
+                        <span class="text-xl">Tr/M<sup>2</sup></span>
+                        <p class="text-6xl">2PN</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:absolute lg:top-20 lg:left-4">
+                <div class="flex lg:flex-col gap-6">
+                    <div class="h-24 lg:h-32 relative">
+                        <div
+                            class="absolute w-full h-full flex items-center justify-center text-lora text-amber-400 text-shadow-amber-200 text-shadow-2xs">
+                            <div class="writing-vertical-rl font-bold">
+                                ƯU ĐÃI
+                            </div>
+                            <div>
+                                <p class="text-xs">Khuyến mại</p>
+                                <p class="text-6xl"> 5%</p>
+                            </div>
+                        </div>
+                        <img src="images/framer.png" class="h-full object-cover" alt="">
+                    </div>
+                    <div class="h-24 lg:h-32 relative">
+                        <div
+                            class="absolute w-full h-full flex items-center justify-center text-lora text-amber-400 text-shadow-amber-200 text-shadow-2xs">
+                            <div class="writing-vertical-rl font-bold">
+                                ƯU ĐÃI
+                            </div>
+                            <div>
+                                <p class="text-xs">Khuyến mại</p>
+                                <p class="text-6xl"> 5%</p>
+                            </div>
+                        </div>
+                        <img src="images/framer.png" class="h-full object-cover" alt="">
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="h-screen">
-            <div class="container pt-[20vh] relative -top-[90vh]">
+        <div class="lg:h-screen">
+            <div class="overflow-hidden mx-0 my-auto h-[120vh] lg:h-[115vh] max-w-[100vw] z-10 pt-[10vh] lg:pt-[20vh] relative lg:-top-[90vh]">
                 <div class="circle-carousel" data-speed="1500" data-autoplay="2000">
-                    <div class="slides text-lora">
+                    <div class="slides absolute -bottom-[25em] lg:-bottom-[40em] lg:-top-[150px] left-0 h-full w-full text-lora">
                         <div class="slide relative">
                             <h2 class="relative">
                                 <div
-                                    class=" bg-gradient-to-r from-blue-200/20 to-transparent pl-4 py-8 rounded-md absolute -top-32 right-0 w-xl text-black font-extrabold z-10">
+                                    class=" bg-gradient-to-r from-blue-200/20 to-transparent pl-4 py-8 rounded-md lg:absolute bottom-0 lg:-top-32 right-0 lg:w-xl text-black font-extrabold z-10">
                                     <h3
-                                        class="text-noto-serif text-6xl font-bold text-amber-600 uppercase text-shadow-amber-200 text-shadow-sm">
+                                        class="text-noto-serif text-2xl lg:text-6xl font-bold text-amber-600 uppercase text-shadow-amber-200 text-shadow-sm">
                                         SYMLIFE</h3>
-                                    <h3 class="text-noto-serif text-5xl mt-4 font-bold text-amber-600 uppercase">Cổng
+                                    <h3 class="text-noto-serif text-xl lg:text-5xl mt-4 font-bold text-amber-600 uppercase">Cổng
                                         chào SYMLIFE</h3>
-                                    <p class="text-md font-normal mt-2">Cổng chào SYMLIFE là biểu tượng kiến trúc đặc
+                                    <p class="text-sm lg:text-md font-normal mt-2">Cổng chào SYMLIFE là biểu tượng kiến trúc đặc
                                         trưng
                                         đánh dấu điểm bắt đầu của khu đô thị thông minh SYMLIFE. Được thiết kế hiện đại,
                                         mang tính biểu tượng và nhận diện cao, cổng chào không chỉ đóng vai trò như điểm
@@ -61,8 +106,8 @@
                                     </p>
                                 </div>
                                 <div
-                                    class="relative -top-6 -right-24  bg-gradient-to-l from-blue-400 to-red-200 px-2 rounded-full">
-                                    <img class=" relative -top-6 -right-44 z-0 w-80 h-80 rounded-full"
+                                    class="relative lg:-top-6 lg:-right-24  bg-gradient-to-l from-blue-400 to-red-200 px-2 rounded-full">
+                                    <img class="relative left-[20%] lg:-top-6 lg:-right-44 z-0 w-40 h-40 lg:w-80 lg:h-80 rounded-full"
                                         src="images/phoi-canh-symlife.jpg" alt="" srcset="">
                                 </div>
                             </h2>
@@ -70,13 +115,13 @@
                         <div class="slide relative">
                             <h2 class="relative">
                                 <div
-                                    class=" bg-gradient-to-r from-blue-200/20 to-transparent pl-4 py-8 rounded-md absolute -top-32 right-0 w-xl text-black font-extrabold z-10">
+                                    class="bg-gradient-to-r from-blue-200/20 to-transparent pl-4 py-8 rounded-md lg:absolute bottom-0 lg:-top-32 right-0 lg:w-xl text-black font-extrabold z-10">
                                     <h3
-                                        class="text-noto-serif text-6xl font-bold text-amber-600 uppercase text-shadow-amber-200 text-shadow-sm">
+                                        class="text-noto-serif text-2xl lg:text-6xl font-bold text-amber-600 uppercase text-shadow-amber-200 text-shadow-sm">
                                         SYMLIFE</h3>
-                                    <h3 class="text-noto-serif text-5xl mt-4 font-bold text-amber-600 uppercase">Cổng
+                                    <h3 class="text-noto-serif text-xl lg:text-5xl mt-4 font-bold text-amber-600 uppercase">Cổng
                                         chào SYMLIFE</h3>
-                                    <p class="text-md font-normal mt-2">Cổng chào SYMLIFE là biểu tượng kiến trúc đặc
+                                    <p class="text-sm lg:text-md font-normal mt-2">Cổng chào SYMLIFE là biểu tượng kiến trúc đặc
                                         trưng
                                         đánh dấu điểm bắt đầu của khu đô thị thông minh SYMLIFE. Được thiết kế hiện đại,
                                         mang tính biểu tượng và nhận diện cao, cổng chào không chỉ đóng vai trò như điểm
@@ -85,8 +130,8 @@
                                     </p>
                                 </div>
                                 <div
-                                    class="relative -top-6 -right-24  bg-gradient-to-l from-blue-400 to-red-200 px-2 rounded-full">
-                                    <img class=" relative -top-6 -right-44 z-0 w-80 h-80 rounded-full"
+                                    class="relative lg:-top-6 lg:-right-24  bg-gradient-to-l from-blue-400 to-red-200 px-2 rounded-full">
+                                    <img class=" relative left-[20%] lg:-top-6 lg:-right-44 z-0 w-40 h-40 lg:w-80 lg:h-80 rounded-full"
                                         src="images/phoi-canh-symlife.jpg" alt="" srcset="">
                                 </div>
                             </h2>
@@ -94,13 +139,13 @@
                         <div class="slide relative">
                             <h2 class="relative">
                                 <div
-                                    class=" bg-gradient-to-r from-blue-200/20 to-transparent pl-4 py-8 rounded-md absolute -top-32 right-0 w-xl text-black font-extrabold z-10">
+                                    class="bg-gradient-to-r from-blue-200/20 to-transparent pl-4 py-8 rounded-md lg:absolute bottom-0 lg:-top-32 right-0 lg:w-xl text-black font-extrabold z-10">
                                     <h3
-                                        class="text-noto-serif text-6xl font-bold text-amber-600 uppercase text-shadow-amber-200 text-shadow-sm">
+                                        class="text-noto-serif text-2xl lg:text-6xl font-bold text-amber-600 uppercase text-shadow-amber-200 text-shadow-sm">
                                         SYMLIFE</h3>
-                                    <h3 class="text-noto-serif text-5xl mt-4 font-bold text-amber-600 uppercase">Cổng
+                                    <h3 class="text-noto-serif text-xl lg:text-5xl mt-4 font-bold text-amber-600 uppercase">Cổng
                                         chào SYMLIFE</h3>
-                                    <p class="text-md font-normal mt-2">Cổng chào SYMLIFE là biểu tượng kiến trúc đặc
+                                    <p class="text-sm lg:text-md font-normal mt-2">Cổng chào SYMLIFE là biểu tượng kiến trúc đặc
                                         trưng
                                         đánh dấu điểm bắt đầu của khu đô thị thông minh SYMLIFE. Được thiết kế hiện đại,
                                         mang tính biểu tượng và nhận diện cao, cổng chào không chỉ đóng vai trò như điểm
@@ -109,8 +154,8 @@
                                     </p>
                                 </div>
                                 <div
-                                    class="relative -top-6 -right-24  bg-gradient-to-l from-blue-400 to-red-200 px-2 rounded-full">
-                                    <img class=" relative -top-6 -right-44 z-0 w-80 h-80 rounded-full"
+                                    class="relative lg:-top-6 lg:-right-24  bg-gradient-to-l from-blue-400 to-red-200 px-2 rounded-full">
+                                    <img class=" relative left-[20%] lg:-top-6 lg:-right-44 z-0 w-40 h-40 lg:w-80 lg:h-80 rounded-full"
                                         src="images/phoi-canh-symlife.jpg" alt="" srcset="">
                                 </div>
                             </h2>
@@ -118,13 +163,13 @@
                         <div class="slide relative">
                             <h2 class="relative">
                                 <div
-                                    class=" bg-gradient-to-r from-blue-200/20 to-transparent pl-4 py-8 rounded-md absolute -top-32 right-0 w-xl text-black font-extrabold z-10">
+                                    class="bg-gradient-to-r from-blue-200/20 to-transparent pl-4 py-8 rounded-md lg:absolute bottom-0 lg:-top-32 right-0 lg:w-xl text-black font-extrabold z-10">
                                     <h3
-                                        class="text-noto-serif text-6xl font-bold text-amber-600 uppercase text-shadow-amber-200 text-shadow-sm">
+                                        class="text-noto-serif text-2xl lg:text-6xl font-bold text-amber-600 uppercase text-shadow-amber-200 text-shadow-sm">
                                         SYMLIFE</h3>
-                                    <h3 class="text-noto-serif text-5xl mt-4 font-bold text-amber-600 uppercase">Cổng
+                                    <h3 class="text-noto-serif text-xl lg:text-5xl mt-4 font-bold text-amber-600 uppercase">Cổng
                                         chào SYMLIFE</h3>
-                                    <p class="text-md font-normal mt-2">Cổng chào SYMLIFE là biểu tượng kiến trúc đặc
+                                    <p class="text-sm lg:text-md font-normal mt-2">Cổng chào SYMLIFE là biểu tượng kiến trúc đặc
                                         trưng
                                         đánh dấu điểm bắt đầu của khu đô thị thông minh SYMLIFE. Được thiết kế hiện đại,
                                         mang tính biểu tượng và nhận diện cao, cổng chào không chỉ đóng vai trò như điểm
@@ -133,8 +178,8 @@
                                     </p>
                                 </div>
                                 <div
-                                    class="relative -top-6 -right-24  bg-gradient-to-l from-blue-400 to-red-200 px-2 rounded-full">
-                                    <img class=" relative -top-6 -right-44 z-0 w-80 h-80 rounded-full"
+                                    class="relative lg:-top-6 lg:-right-24  bg-gradient-to-l from-blue-400 to-red-200 px-2 rounded-full">
+                                    <img class=" relative left-[20%] lg:-top-6 lg:-right-44 z-0 w-40 h-40 lg:w-80 lg:h-80 rounded-full"
                                         src="images/phoi-canh-symlife.jpg" alt="" srcset="">
                                 </div>
                             </h2>
@@ -142,13 +187,13 @@
                         <div class="slide relative">
                             <h2 class="relative">
                                 <div
-                                    class=" bg-gradient-to-r from-blue-200/20 to-transparent pl-4 py-8 rounded-md absolute -top-32 right-0 w-xl text-black font-extrabold z-10">
+                                    class="bg-gradient-to-r from-blue-200/20 to-transparent pl-4 py-8 rounded-md lg:absolute bottom-0 lg:-top-32 right-0 lg:w-xl text-black font-extrabold z-10">
                                     <h3
-                                        class="text-noto-serif text-6xl font-bold text-amber-600 uppercase text-shadow-amber-200 text-shadow-sm">
+                                        class="text-noto-serif text-2xl lg:text-6xl font-bold text-amber-600 uppercase text-shadow-amber-200 text-shadow-sm">
                                         SYMLIFE</h3>
-                                    <h3 class="text-noto-serif text-5xl mt-4 font-bold text-amber-600 uppercase">Cổng
+                                    <h3 class="text-noto-serif text-xl lg:text-5xl mt-4 font-bold text-amber-600 uppercase">Cổng
                                         chào SYMLIFE</h3>
-                                    <p class="text-md font-normal mt-2">Cổng chào SYMLIFE là biểu tượng kiến trúc đặc
+                                    <p class="text-sm lg:text-md font-normal mt-2">Cổng chào SYMLIFE là biểu tượng kiến trúc đặc
                                         trưng
                                         đánh dấu điểm bắt đầu của khu đô thị thông minh SYMLIFE. Được thiết kế hiện đại,
                                         mang tính biểu tượng và nhận diện cao, cổng chào không chỉ đóng vai trò như điểm
@@ -157,8 +202,8 @@
                                     </p>
                                 </div>
                                 <div
-                                    class="relative -top-6 -right-24  bg-gradient-to-l from-blue-400 to-red-200 px-2 rounded-full">
-                                    <img class=" relative -top-6 -right-44 z-0 w-80 h-80 rounded-full"
+                                    class="relative lg:-top-6 lg:-right-24  bg-gradient-to-l from-blue-400 to-red-200 px-2 rounded-full">
+                                    <img class=" relative left-[20%] lg:-top-6 lg:-right-44 z-0 w-40 h-40 lg:w-80 lg:h-80 rounded-full"
                                         src="images/phoi-canh-symlife.jpg" alt="" srcset="">
                                 </div>
                             </h2>
@@ -166,13 +211,13 @@
                         <div class="slide relative">
                             <h2 class="relative">
                                 <div
-                                    class=" bg-gradient-to-r from-blue-200/20 to-transparent pl-4 py-8 rounded-md absolute -top-32 right-0 w-xl text-black font-extrabold z-10">
+                                    class="bg-gradient-to-r from-blue-200/20 to-transparent pl-4 py-8 rounded-md lg:absolute bottom-0 lg:-top-32 right-0 lg:w-xl text-black font-extrabold z-10">
                                     <h3
-                                        class="text-noto-serif text-6xl font-bold text-amber-600 uppercase text-shadow-amber-200 text-shadow-sm">
+                                        class="text-noto-serif text-2xl lg:text-6xl font-bold text-amber-600 uppercase text-shadow-amber-200 text-shadow-sm">
                                         SYMLIFE</h3>
-                                    <h3 class="text-noto-serif text-5xl mt-4 font-bold text-amber-600 uppercase">Cổng
+                                    <h3 class="text-noto-serif text-xl lg:text-5xl mt-4 font-bold text-amber-600 uppercase">Cổng
                                         chào SYMLIFE</h3>
-                                    <p class="text-md font-normal mt-2">Cổng chào SYMLIFE là biểu tượng kiến trúc đặc
+                                    <p class="text-sm lg:text-md font-normal mt-2">Cổng chào SYMLIFE là biểu tượng kiến trúc đặc
                                         trưng
                                         đánh dấu điểm bắt đầu của khu đô thị thông minh SYMLIFE. Được thiết kế hiện đại,
                                         mang tính biểu tượng và nhận diện cao, cổng chào không chỉ đóng vai trò như điểm
@@ -181,8 +226,8 @@
                                     </p>
                                 </div>
                                 <div
-                                    class="relative -top-6 -right-24  bg-gradient-to-l from-blue-400 to-red-200 px-2 rounded-full">
-                                    <img class=" relative -top-6 -right-44 z-0 w-80 h-80 rounded-full"
+                                    class="relative lg:-top-6 lg:-right-24  bg-gradient-to-l from-blue-400 to-red-200 px-2 rounded-full">
+                                    <img class=" relative left-[20%] lg:-top-6 lg:-right-44 z-0 w-40 h-40 lg:w-80 lg:h-80 rounded-full"
                                         src="images/phoi-canh-symlife.jpg" alt="" srcset="">
                                 </div>
                             </h2>
@@ -190,13 +235,13 @@
                         <div class="slide relative">
                             <h2 class="relative">
                                 <div
-                                    class=" bg-gradient-to-r from-blue-200/20 to-transparent pl-4 py-8 rounded-md absolute -top-32 right-0 w-xl text-black font-extrabold z-10">
+                                    class="bg-gradient-to-r from-blue-200/20 to-transparent pl-4 py-8 rounded-md lg:absolute bottom-0 lg:-top-32 right-0 lg:w-xl text-black font-extrabold z-10">
                                     <h3
-                                        class="text-noto-serif text-6xl font-bold text-amber-600 uppercase text-shadow-amber-200 text-shadow-sm">
+                                        class="text-noto-serif text-2xl lg:text-6xl font-bold text-amber-600 uppercase text-shadow-amber-200 text-shadow-sm">
                                         SYMLIFE</h3>
-                                    <h3 class="text-noto-serif text-5xl mt-4 font-bold text-amber-600 uppercase">Cổng
+                                    <h3 class="text-noto-serif text-xl lg:text-5xl mt-4 font-bold text-amber-600 uppercase">Cổng
                                         chào SYMLIFE</h3>
-                                    <p class="text-md font-normal mt-2">Cổng chào SYMLIFE là biểu tượng kiến trúc đặc
+                                    <p class="text-sm lg:text-md font-normal mt-2">Cổng chào SYMLIFE là biểu tượng kiến trúc đặc
                                         trưng
                                         đánh dấu điểm bắt đầu của khu đô thị thông minh SYMLIFE. Được thiết kế hiện đại,
                                         mang tính biểu tượng và nhận diện cao, cổng chào không chỉ đóng vai trò như điểm
@@ -205,8 +250,8 @@
                                     </p>
                                 </div>
                                 <div
-                                    class="relative -top-6 -right-24  bg-gradient-to-l from-blue-400 to-red-200 px-2 rounded-full">
-                                    <img class=" relative -top-6 -right-44 z-0 w-80 h-80 rounded-full"
+                                    class="relative lg:-top-6 lg:-right-24  bg-gradient-to-l from-blue-400 to-red-200 px-2 rounded-full">
+                                    <img class=" relative left-[20%] lg:-top-6 lg:-right-44 z-0 w-40 h-40 lg:w-80 lg:h-80 rounded-full"
                                         src="images/phoi-canh-symlife.jpg" alt="" srcset="">
                                 </div>
                             </h2>
@@ -214,13 +259,13 @@
                         <div class="slide relative">
                             <h2 class="relative">
                                 <div
-                                    class=" bg-gradient-to-r from-blue-200/20 to-transparent pl-4 py-8 rounded-md absolute -top-32 right-0 w-xl text-black font-extrabold z-10">
+                                    class="bg-gradient-to-r from-blue-200/20 to-transparent pl-4 py-8 rounded-md lg:absolute bottom-0 lg:-top-32 right-0 lg:w-xl text-black font-extrabold z-10">
                                     <h3
-                                        class="text-noto-serif text-6xl font-bold text-amber-600 uppercase text-shadow-amber-200 text-shadow-sm">
+                                        class="text-noto-serif text-2xl lg:text-6xl font-bold text-amber-600 uppercase text-shadow-amber-200 text-shadow-sm">
                                         SYMLIFE</h3>
-                                    <h3 class="text-noto-serif text-5xl mt-4 font-bold text-amber-600 uppercase">Cổng
+                                    <h3 class="text-noto-serif text-xl lg:text-5xl mt-4 font-bold text-amber-600 uppercase">Cổng
                                         chào SYMLIFE</h3>
-                                    <p class="text-md font-normal mt-2">Cổng chào SYMLIFE là biểu tượng kiến trúc đặc
+                                    <p class="text-sm lg:text-md font-normal mt-2">Cổng chào SYMLIFE là biểu tượng kiến trúc đặc
                                         trưng
                                         đánh dấu điểm bắt đầu của khu đô thị thông minh SYMLIFE. Được thiết kế hiện đại,
                                         mang tính biểu tượng và nhận diện cao, cổng chào không chỉ đóng vai trò như điểm
@@ -229,8 +274,8 @@
                                     </p>
                                 </div>
                                 <div
-                                    class="relative -top-6 -right-24  bg-gradient-to-l from-blue-400 to-red-200 px-2 rounded-full">
-                                    <img class=" relative -top-6 -right-44 z-0 w-80 h-80 rounded-full"
+                                    class="relative lg:-top-6 lg:-right-24  bg-gradient-to-l from-blue-400 to-red-200 px-2 rounded-full">
+                                    <img class=" relative left-[20%] lg:-top-6 lg:-right-44 z-0 w-40 h-40 lg:w-80 lg:h-80 rounded-full"
                                         src="images/phoi-canh-symlife.jpg" alt="" srcset="">
                                 </div>
                             </h2>
@@ -238,13 +283,13 @@
                         <div class="slide relative">
                             <h2 class="relative">
                                 <div
-                                    class=" bg-gradient-to-r from-blue-200/20 to-transparent pl-4 py-8 rounded-md absolute -top-32 right-0 w-xl text-black font-extrabold z-10">
+                                    class="bg-gradient-to-r from-blue-200/20 to-transparent pl-4 py-8 rounded-md lg:absolute bottom-0 lg:-top-32 right-0 lg:w-xl text-black font-extrabold z-10">
                                     <h3
-                                        class="text-noto-serif text-6xl font-bold text-amber-600 uppercase text-shadow-amber-200 text-shadow-sm">
+                                        class="text-noto-serif text-2xl lg:text-6xl font-bold text-amber-600 uppercase text-shadow-amber-200 text-shadow-sm">
                                         SYMLIFE</h3>
-                                    <h3 class="text-noto-serif text-5xl mt-4 font-bold text-amber-600 uppercase">Cổng
+                                    <h3 class="text-noto-serif text-xl lg:text-5xl mt-4 font-bold text-amber-600 uppercase">Cổng
                                         chào SYMLIFE</h3>
-                                    <p class="text-md font-normal mt-2">Cổng chào SYMLIFE là biểu tượng kiến trúc đặc
+                                    <p class="text-sm lg:text-md font-normal mt-2">Cổng chào SYMLIFE là biểu tượng kiến trúc đặc
                                         trưng
                                         đánh dấu điểm bắt đầu của khu đô thị thông minh SYMLIFE. Được thiết kế hiện đại,
                                         mang tính biểu tượng và nhận diện cao, cổng chào không chỉ đóng vai trò như điểm
@@ -253,8 +298,8 @@
                                     </p>
                                 </div>
                                 <div
-                                    class="relative -top-6 -right-24  bg-gradient-to-l from-blue-400 to-red-200 px-2 rounded-full">
-                                    <img class=" relative -top-6 -right-44 z-0 w-80 h-80 rounded-full"
+                                    class="relative lg:-top-6 lg:-right-24  bg-gradient-to-l from-blue-400 to-red-200 px-2 rounded-full">
+                                    <img class=" relative left-[20%] lg:-top-6 lg:-right-44 z-0 w-40 h-40 lg:w-80 lg:h-80 rounded-full"
                                         src="images/phoi-canh-symlife.jpg" alt="" srcset="">
                                 </div>
                             </h2>
@@ -262,13 +307,13 @@
                         <div class="slide relative">
                             <h2 class="relative">
                                 <div
-                                    class=" bg-gradient-to-r from-blue-200/20 to-transparent pl-4 py-8 rounded-md absolute -top-32 right-0 w-xl text-black font-extrabold z-10">
+                                    class="bg-gradient-to-r from-blue-200/20 to-transparent pl-4 py-8 rounded-md lg:absolute bottom-0 lg:-top-32 right-0 lg:w-xl text-black font-extrabold z-10">
                                     <h3
-                                        class="text-noto-serif text-6xl font-bold text-amber-600 uppercase text-shadow-amber-200 text-shadow-sm">
+                                        class="text-noto-serif text-2xl lg:text-6xl font-bold text-amber-600 uppercase text-shadow-amber-200 text-shadow-sm">
                                         SYMLIFE</h3>
-                                    <h3 class="text-noto-serif text-5xl mt-4 font-bold text-amber-600 uppercase">Cổng
+                                    <h3 class="text-noto-serif text-xl lg:text-5xl mt-4 font-bold text-amber-600 uppercase">Cổng
                                         chào SYMLIFE</h3>
-                                    <p class="text-md font-normal mt-2">Cổng chào SYMLIFE là biểu tượng kiến trúc đặc
+                                    <p class="text-sm lg:text-md font-normal mt-2">Cổng chào SYMLIFE là biểu tượng kiến trúc đặc
                                         trưng
                                         đánh dấu điểm bắt đầu của khu đô thị thông minh SYMLIFE. Được thiết kế hiện đại,
                                         mang tính biểu tượng và nhận diện cao, cổng chào không chỉ đóng vai trò như điểm
@@ -277,8 +322,8 @@
                                     </p>
                                 </div>
                                 <div
-                                    class="relative -top-6 -right-24  bg-gradient-to-l from-blue-400 to-red-200 px-2 rounded-full">
-                                    <img class=" relative -top-6 -right-44 z-0 w-80 h-80 rounded-full"
+                                    class="relative lg:-top-6 lg:-right-24  bg-gradient-to-l from-blue-400 to-red-200 px-2 rounded-full">
+                                    <img class=" relative left-[20%] lg:-top-6 lg:-right-44 z-0 w-40 h-40 lg:w-80 lg:h-80 rounded-full"
                                         src="images/phoi-canh-symlife.jpg" alt="" srcset="">
                                 </div>
                             </h2>
@@ -286,13 +331,13 @@
                         <div class="slide relative">
                             <h2 class="relative">
                                 <div
-                                    class=" bg-gradient-to-r from-blue-200/20 to-transparent pl-4 py-8 rounded-md absolute -top-32 right-0 w-xl text-black font-extrabold z-10">
+                                    class="bg-gradient-to-r from-blue-200/20 to-transparent pl-4 py-8 rounded-md lg:absolute bottom-0 lg:-top-32 right-0 lg:w-xl text-black font-extrabold z-10">
                                     <h3
-                                        class="text-noto-serif text-6xl font-bold text-amber-600 uppercase text-shadow-amber-200 text-shadow-sm">
+                                        class="text-noto-serif text-2xl lg:text-6xl font-bold text-amber-600 uppercase text-shadow-amber-200 text-shadow-sm">
                                         SYMLIFE</h3>
-                                    <h3 class="text-noto-serif text-5xl mt-4 font-bold text-amber-600 uppercase">Cổng
+                                    <h3 class="text-noto-serif text-xl lg:text-5xl mt-4 font-bold text-amber-600 uppercase">Cổng
                                         chào SYMLIFE</h3>
-                                    <p class="text-md font-normal mt-2">Cổng chào SYMLIFE là biểu tượng kiến trúc đặc
+                                    <p class="text-sm lg:text-md font-normal mt-2">Cổng chào SYMLIFE là biểu tượng kiến trúc đặc
                                         trưng
                                         đánh dấu điểm bắt đầu của khu đô thị thông minh SYMLIFE. Được thiết kế hiện đại,
                                         mang tính biểu tượng và nhận diện cao, cổng chào không chỉ đóng vai trò như điểm
@@ -301,8 +346,8 @@
                                     </p>
                                 </div>
                                 <div
-                                    class="relative -top-6 -right-24  bg-gradient-to-l from-blue-400 to-red-200 px-2 rounded-full">
-                                    <img class=" relative -top-6 -right-44 z-0 w-80 h-80 rounded-full"
+                                    class="relative lg:-top-6 lg:-right-24  bg-gradient-to-l from-blue-400 to-red-200 px-2 rounded-full">
+                                    <img class=" relative left-[20%] lg:-top-6 lg:-right-44 z-0 w-40 h-40 lg:w-80 lg:h-80 rounded-full"
                                         src="images/phoi-canh-symlife.jpg" alt="" srcset="">
                                 </div>
                             </h2>
@@ -310,13 +355,13 @@
                         <div class="slide relative">
                             <h2 class="relative">
                                 <div
-                                    class=" bg-gradient-to-r from-blue-200/20 to-transparent pl-4 py-8 rounded-md absolute -top-32 right-0 w-xl text-black font-extrabold z-10">
+                                    class="bg-gradient-to-r from-blue-200/20 to-transparent pl-4 py-8 rounded-md lg:absolute bottom-0 lg:-top-32 right-0 lg:w-xl text-black font-extrabold z-10">
                                     <h3
-                                        class="text-noto-serif text-6xl font-bold text-amber-600 uppercase text-shadow-amber-200 text-shadow-sm">
+                                        class="text-noto-serif text-2xl lg:text-6xl font-bold text-amber-600 uppercase text-shadow-amber-200 text-shadow-sm">
                                         SYMLIFE</h3>
-                                    <h3 class="text-noto-serif text-5xl mt-4 font-bold text-amber-600 uppercase">Cổng
+                                    <h3 class="text-noto-serif text-xl lg:text-5xl mt-4 font-bold text-amber-600 uppercase">Cổng
                                         chào SYMLIFE</h3>
-                                    <p class="text-md font-normal mt-2">Cổng chào SYMLIFE là biểu tượng kiến trúc đặc
+                                    <p class="text-sm lg:text-md font-normal mt-2">Cổng chào SYMLIFE là biểu tượng kiến trúc đặc
                                         trưng
                                         đánh dấu điểm bắt đầu của khu đô thị thông minh SYMLIFE. Được thiết kế hiện đại,
                                         mang tính biểu tượng và nhận diện cao, cổng chào không chỉ đóng vai trò như điểm
@@ -325,8 +370,8 @@
                                     </p>
                                 </div>
                                 <div
-                                    class="relative -top-6 -right-24  bg-gradient-to-l from-blue-400 to-red-200 px-2 rounded-full">
-                                    <img class=" relative -top-6 -right-44 z-0 w-80 h-80 rounded-full"
+                                    class="relative lg:-top-6 lg:-right-24  bg-gradient-to-l from-blue-400 to-red-200 px-2 rounded-full">
+                                    <img class=" relative left-[20%] lg:-top-6 lg:-right-44 z-0 w-40 h-40 lg:w-80 lg:h-80 rounded-full"
                                         src="images/phoi-canh-symlife.jpg" alt="" srcset="">
                                 </div>
                             </h2>
@@ -334,13 +379,13 @@
                         <div class="slide relative">
                             <h2 class="relative">
                                 <div
-                                    class=" bg-gradient-to-r from-blue-200/20 to-transparent pl-4 py-8 rounded-md absolute -top-32 right-0 w-xl text-black font-extrabold z-10">
+                                    class="bg-gradient-to-r from-blue-200/20 to-transparent pl-4 py-8 rounded-md lg:absolute bottom-0 lg:-top-32 right-0 lg:w-xl text-black font-extrabold z-10">
                                     <h3
-                                        class="text-noto-serif text-6xl font-bold text-amber-600 uppercase text-shadow-amber-200 text-shadow-sm">
+                                        class="text-noto-serif text-2xl lg:text-6xl font-bold text-amber-600 uppercase text-shadow-amber-200 text-shadow-sm">
                                         SYMLIFE</h3>
-                                    <h3 class="text-noto-serif text-5xl mt-4 font-bold text-amber-600 uppercase">Cổng
+                                    <h3 class="text-noto-serif text-xl lg:text-5xl mt-4 font-bold text-amber-600 uppercase">Cổng
                                         chào SYMLIFE</h3>
-                                    <p class="text-md font-normal mt-2">Cổng chào SYMLIFE là biểu tượng kiến trúc đặc
+                                    <p class="text-sm lg:text-md font-normal mt-2">Cổng chào SYMLIFE là biểu tượng kiến trúc đặc
                                         trưng
                                         đánh dấu điểm bắt đầu của khu đô thị thông minh SYMLIFE. Được thiết kế hiện đại,
                                         mang tính biểu tượng và nhận diện cao, cổng chào không chỉ đóng vai trò như điểm
@@ -349,8 +394,8 @@
                                     </p>
                                 </div>
                                 <div
-                                    class="relative -top-6 -right-24  bg-gradient-to-l from-blue-400 to-red-200 px-2 rounded-full">
-                                    <img class=" relative -top-6 -right-44 z-0 w-80 h-80 rounded-full"
+                                    class="relative lg:-top-6 lg:-right-24  bg-gradient-to-l from-blue-400 to-red-200 px-2 rounded-full">
+                                    <img class=" relative left-[20%] lg:-top-6 lg:-right-44 z-0 w-40 h-40 lg:w-80 lg:h-80 rounded-full"
                                         src="images/phoi-canh-symlife.jpg" alt="" srcset="">
                                 </div>
                             </h2>
@@ -358,13 +403,13 @@
                         <div class="slide relative">
                             <h2 class="relative">
                                 <div
-                                    class=" bg-gradient-to-r from-blue-200/20 to-transparent pl-4 py-8 rounded-md absolute -top-32 right-0 w-xl text-black font-extrabold z-10">
+                                    class="bg-gradient-to-r from-blue-200/20 to-transparent pl-4 py-8 rounded-md lg:absolute bottom-0 lg:-top-32 right-0 lg:w-xl text-black font-extrabold z-10">
                                     <h3
-                                        class="text-noto-serif text-6xl font-bold text-amber-600 uppercase text-shadow-amber-200 text-shadow-sm">
+                                        class="text-noto-serif text-2xl lg:text-6xl font-bold text-amber-600 uppercase text-shadow-amber-200 text-shadow-sm">
                                         SYMLIFE</h3>
-                                    <h3 class="text-noto-serif text-5xl mt-4 font-bold text-amber-600 uppercase">Cổng
+                                    <h3 class="text-noto-serif text-xl lg:text-5xl mt-4 font-bold text-amber-600 uppercase">Cổng
                                         chào SYMLIFE</h3>
-                                    <p class="text-md font-normal mt-2">Cổng chào SYMLIFE là biểu tượng kiến trúc đặc
+                                    <p class="text-sm lg:text-md font-normal mt-2">Cổng chào SYMLIFE là biểu tượng kiến trúc đặc
                                         trưng
                                         đánh dấu điểm bắt đầu của khu đô thị thông minh SYMLIFE. Được thiết kế hiện đại,
                                         mang tính biểu tượng và nhận diện cao, cổng chào không chỉ đóng vai trò như điểm
@@ -373,8 +418,8 @@
                                     </p>
                                 </div>
                                 <div
-                                    class="relative -top-6 -right-24  bg-gradient-to-l from-blue-400 to-red-200 px-2 rounded-full">
-                                    <img class=" relative -top-6 -right-44 z-0 w-80 h-80 rounded-full"
+                                    class="relative lg:-top-6 lg:-right-24  bg-gradient-to-l from-blue-400 to-red-200 px-2 rounded-full">
+                                    <img class=" relative left-[20%] lg:-top-6 lg:-right-44 z-0 w-40 h-40 lg:w-80 lg:h-80 rounded-full"
                                         src="images/phoi-canh-symlife.jpg" alt="" srcset="">
                                 </div>
                             </h2>
@@ -383,118 +428,121 @@
                     </div>
                     <div class="pagination">
                         <div class="item">
-                            <div class="dot bg-gradient-to-b from-blue-200 to-red-200 shadow-cyan-200 shadow-2xl z-100">
-                                <span><img class="w-48 h-48 rounded-full" src="images/phoi-canh-symlife.jpg" alt=""
+                            <div class="dot w-24 h-24 lg:w-52 lg:h-52 bg-gradient-to-b from-blue-200 to-red-200 shadow-cyan-200 shadow-2xl z-100">
+                                <span><img class="w-20 h-20 lg:w-48 lg:h-48 rounded-full" src="images/phoi-canh-symlife.jpg" alt=""
                                         srcset=""></span>
                             </div>
                         </div>
                         <div class="item">
-                            <div class="dot bg-gradient-to-b from-blue-200 to-red-200 shadow-cyan-200 shadow-2xl">
-                                <span><img class="w-48 h-48 rounded-full" src="images/phoi-canh-symlife.jpg" alt=""
+                            <div class="dot w-24 h-24 lg:w-52 lg:h-52 bg-gradient-to-b from-blue-200 to-red-200 shadow-cyan-200 shadow-2xl">
+                                <span><img class="w-20 h-20 lg:w-48 lg:h-48 rounded-full" src="images/phoi-canh-symlife.jpg" alt=""
                                         srcset=""></span>
                             </div>
                         </div>
                         <div class="item">
-                            <div class="dot bg-gradient-to-b from-blue-200 to-red-200 shadow-cyan-200 shadow-2xl">
-                                <span><img class="w-48 h-48 rounded-full" src="images/phoi-canh-symlife.jpg" alt=""
+                            <div class="dot w-24 h-24 lg:w-52 lg:h-52 bg-gradient-to-b from-blue-200 to-red-200 shadow-cyan-200 shadow-2xl">
+                                <span><img class="w-20 h-20 lg:w-48 lg:h-48 rounded-full" src="images/phoi-canh-symlife.jpg" alt=""
                                         srcset=""></span>
                             </div>
                         </div>
                         <div class="item">
-                            <div class="dot bg-gradient-to-b from-blue-200 to-red-200 shadow-cyan-200 shadow-2xl">
-                                <span><img class="w-48 h-48 rounded-full" src="images/phoi-canh-symlife.jpg" alt=""
+                            <div class="dot w-24 h-24 lg:w-52 lg:h-52 bg-gradient-to-b from-blue-200 to-red-200 shadow-cyan-200 shadow-2xl">
+                                <span><img class="w-20 h-20 lg:w-48 lg:h-48 rounded-full" src="images/phoi-canh-symlife.jpg" alt=""
                                         srcset=""></span>
                             </div>
                         </div>
                         <div class="item">
-                            <div class="dot bg-gradient-to-b from-blue-200 to-red-200 shadow-cyan-200 shadow-2xl">
-                                <span><img class="w-48 h-48 rounded-full" src="images/phoi-canh-symlife.jpg" alt=""
+                            <div class="dot w-24 h-24 lg:w-52 lg:h-52 bg-gradient-to-b from-blue-200 to-red-200 shadow-cyan-200 shadow-2xl">
+                                <span><img class="w-20 h-20 lg:w-48 lg:h-48 rounded-full" src="images/phoi-canh-symlife.jpg" alt=""
                                         srcset=""></span>
                             </div>
                         </div>
                         <div class="item">
-                            <div class="dot bg-gradient-to-b from-blue-200 to-red-200 shadow-cyan-200 shadow-2xl">
-                                <span><img class="w-48 h-48 rounded-full" src="images/phoi-canh-symlife.jpg" alt=""
+                            <div class="dot w-24 h-24 lg:w-52 lg:h-52 bg-gradient-to-b from-blue-200 to-red-200 shadow-cyan-200 shadow-2xl">
+                                <span><img class="w-20 h-20 lg:w-48 lg:h-48 rounded-full" src="images/phoi-canh-symlife.jpg" alt=""
                                         srcset=""></span>
                             </div>
                         </div>
                         <div class="item">
-                            <div class="dot bg-gradient-to-b from-blue-200 to-red-200 shadow-cyan-200 shadow-2xl">
-                                <span><img class="w-48 h-48 rounded-full" src="images/phoi-canh-symlife.jpg" alt=""
+                            <div class="dot w-24 h-24 lg:w-52 lg:h-52 bg-gradient-to-b from-blue-200 to-red-200 shadow-cyan-200 shadow-2xl">
+                                <span><img class="w-20 h-20 lg:w-48 lg:h-48 rounded-full" src="images/phoi-canh-symlife.jpg" alt=""
                                         srcset=""></span>
                             </div>
                         </div>
                         <div class="item">
-                            <div class="dot bg-gradient-to-b from-blue-200 to-red-200 shadow-cyan-200 shadow-2xl">
-                                <span><img class="w-48 h-48 rounded-full" src="images/phoi-canh-symlife.jpg" alt=""
+                            <div class="dot w-24 h-24 lg:w-52 lg:h-52 bg-gradient-to-b from-blue-200 to-red-200 shadow-cyan-200 shadow-2xl">
+                                <span><img class="w-20 h-20 lg:w-48 lg:h-48 rounded-full" src="images/phoi-canh-symlife.jpg" alt=""
                                         srcset=""></span>
                             </div>
                         </div>
                         <div class="item">
-                            <div class="dot bg-gradient-to-b from-blue-200 to-red-200 shadow-cyan-200 shadow-2xl">
-                                <span><img class="w-48 h-48 rounded-full" src="images/phoi-canh-symlife.jpg" alt=""
+                            <div class="dot w-24 h-24 lg:w-52 lg:h-52 bg-gradient-to-b from-blue-200 to-red-200 shadow-cyan-200 shadow-2xl">
+                                <span><img class="w-20 h-20 lg:w-48 lg:h-48 rounded-full" src="images/phoi-canh-symlife.jpg" alt=""
                                         srcset=""></span>
                             </div>
                         </div>
                         <div class="item">
-                            <div class="dot bg-gradient-to-b from-blue-200 to-red-200 shadow-cyan-200 shadow-2xl">
-                                <span><img class="w-48 h-48 rounded-full" src="images/phoi-canh-symlife.jpg" alt=""
+                            <div class="dot w-24 h-24 lg:w-52 lg:h-52 bg-gradient-to-b from-blue-200 to-red-200 shadow-cyan-200 shadow-2xl">
+                                <span><img class="w-20 h-20 lg:w-48 lg:h-48 rounded-full" src="images/phoi-canh-symlife.jpg" alt=""
                                         srcset=""></span>
                             </div>
                         </div>
                         <div class="item">
-                            <div class="dot bg-gradient-to-b from-blue-200 to-red-200 shadow-cyan-200 shadow-2xl">
-                                <span><img class="w-48 h-48 rounded-full" src="images/phoi-canh-symlife.jpg" alt=""
+                            <div class="dot w-24 h-24 lg:w-52 lg:h-52 bg-gradient-to-b from-blue-200 to-red-200 shadow-cyan-200 shadow-2xl">
+                                <span><img class="w-20 h-20 lg:w-48 lg:h-48 rounded-full" src="images/phoi-canh-symlife.jpg" alt=""
                                         srcset=""></span>
                             </div>
                         </div>
                         <div class="item">
-                            <div class="dot bg-gradient-to-b from-blue-200 to-red-200 shadow-cyan-200 shadow-2xl">
-                                <span><img class="w-48 h-48 rounded-full" src="images/phoi-canh-symlife.jpg" alt=""
+                            <div class="dot w-24 h-24 lg:w-52 lg:h-52 bg-gradient-to-b from-blue-200 to-red-200 shadow-cyan-200 shadow-2xl">
+                                <span><img class="w-20 h-20 lg:w-48 lg:h-48 rounded-full" src="images/phoi-canh-symlife.jpg" alt=""
                                         srcset=""></span>
                             </div>
                         </div>
                         <div class="item">
-                            <div class="dot bg-gradient-to-b from-blue-200 to-red-200 shadow-cyan-200 shadow-2xl">
-                                <span><img class="w-48 h-48 rounded-full" src="images/phoi-canh-symlife.jpg" alt=""
+                            <div class="dot w-24 h-24 lg:w-52 lg:h-52 bg-gradient-to-b from-blue-200 to-red-200 shadow-cyan-200 shadow-2xl">
+                                <span><img class="w-20 h-20 lg:w-48 lg:h-48 rounded-full" src="images/phoi-canh-symlife.jpg" alt=""
                                         srcset=""></span>
                             </div>
                         </div>
                         <div class="item">
-                            <div class="dot bg-gradient-to-b from-blue-200 to-red-200 shadow-cyan-200 shadow-2xl">
-                                <span><img class="w-48 h-48 rounded-full" src="images/phoi-canh-symlife.jpg" alt=""
+                            <div class="dot w-24 h-24 lg:w-52 lg:h-52 bg-gradient-to-b from-blue-200 to-red-200 shadow-cyan-200 shadow-2xl">
+                                <span><img class="w-20 h-20 lg:w-48 lg:h-48 rounded-full" src="images/phoi-canh-symlife.jpg" alt=""
                                         srcset=""></span>
                             </div>
                         </div>
                         <div class="item">
-                            <div class="dot bg-gradient-to-b from-blue-200 to-red-200 shadow-cyan-200 shadow-2xl">
-                                <span><img class="w-48 h-48 rounded-full" src="images/phoi-canh-symlife.jpg" alt=""
+                            <div class="dot w-24 h-24 lg:w-52 lg:h-52 bg-gradient-to-b from-blue-200 to-red-200 shadow-cyan-200 shadow-2xl">
+                                <span><img class="w-20 h-20 lg:w-48 lg:h-48 rounded-full" src="images/phoi-canh-symlife.jpg" alt=""
                                         srcset=""></span>
                             </div>
                         </div>
                     </div>
-                    <div class="next">Next</div>
-                    <div class="prev">Prev</div>
+                    <div class="next hidden">Next</div>
+                    <div class="prev hidden">Prev</div>
                 </div>
             </div>
         </div>
 
         <div class="relative text-lora">
-            <div class="w-full absolute -top-[60vh]">
+            <div class="w-full lg:absolute -top-[60vh]">
                 <div class="max-w-6xl mx-auto flex flex-col gap-8 shadow-inner bg-cyan-500/60 rounded-2xl px-4 py-4">
                     <div class="flex items-center gap-0 mx-auto">
-                        <div class="w-36"><img src="images/flower left.png" alt=""></div>
+                        <div class="w-24 lg:w-36"><img src="images/flower left.png" alt=""></div>
                         <div>
-                            <h2 class="text-5xl text-center font-bold text-amber-600 uppercase">BOOKING ngay</h2>
-                            <p class="text-center mt-1 text-2xl font-bold text-blue-500 text-shadow-2xs uppercase">Nhận
+                            <h2 class="text-2xl lg:text-5xl text-center font-bold text-amber-600 uppercase">BOOKING ngay
+                            </h2>
+                            <p
+                                class="text-center mt-1 text-md lg:text-2xl font-bold text-blue-500 text-shadow-2xs uppercase">
+                                Nhận
                                 ngàn ưu đãi</p>
                         </div>
-                        <div class="w-36"><img src="images/flower right.png" alt=""></div>
+                        <div class="w-24 lg:w-36"><img src="images/flower right.png" alt=""></div>
                     </div>
                     <p class="text-sm">“Booking Ngay” là tính năng cho phép khách hàng nhanh chóng giữ chỗ hoặc đặt cọc
                         trước cho sản phẩm bất động sản (căn hộ, nhà phố, đất nền...) chỉ với vài thao tác đơn giản,
                         giúp tiết kiệm thời gian và đảm bảo quyền lợi trong quá trình giao dịch.</p>
-                    <form class="grid grid-cols-3 gap-4">
+                    <form class="grid grid-cols-1 lg:grid-cols-3 gap-4">
                         <div>
                             <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
                                 email</label>
@@ -598,53 +646,60 @@
                 </table>
             </div>
 
-
         </div>
 
 
         <div class="mt-4">
             <div class="relative text-lora">
-                <div class="grid grid-cols-2">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
                     <div></div>
-                    <img src="images/vitri-symlife-ql13-Photoroom.png" class="h-screen rounded-xl saturate-150" alt=""
+                    <img src="images/vitri-symlife-ql13-Photoroom.png" class="w-ful lg:w-auto lg:h-screen rounded-xl saturate-150" alt=""
                         srcset="">
                 </div>
 
                 <div
-                    class="absolute pl-8 py-4 top-20 left-16 h-[70vh] w-[50vw] bg-gradient-to-r from-cyan-200/80 to-white/10">
+                    class="lg:absolute lg:pl-8 py-4 lg:top-20 lg:left-16 lg:h-[70vh] lg:w-[50vw] bg-gradient-to-r from-cyan-200/80 to-white/10">
                     <div class="flex flex-col gap-4 relative">
                         <h2 class="text-sm text-gray-400 relative z-10">nhịp sống cho đời an nhiên</h2>
                         <h3 class="text-4xl font-bold relative z-10 text-shadow-amber-50 text-gray-400 text-shadow-2xs">
                             VỊ TRÍ DỰ ÁN CĂN HỘ SYMLIFE</h3>
 
-                        <p>Symlife Thuận An là dự án căn hộ được phát triển tại trung tâm sầm uất của thành phố Thuận
-                            An,
-                            tỉnh Bình Dương. Sở hữu vị trí đắc địa ngay mặt tiền Quốc lộ 13 – tuyến giao thông huyết
-                            mạch
-                            bậc nhất khu vực, căn hộ Symlife không chỉ thuận lợi di chuyển nội khu mà còn mở rộng kết
-                            nối
-                            nhanh chóng đến TP.HCM và các vùng kinh tế trọng điểm phía Nam.</p>
+                        <div class="text-sm lg:text-md lg:text-lg">
+                            <p>Symlife Thuận An là dự án căn hộ được phát triển tại trung tâm sầm uất của thành phố
+                                Thuận
+                                An,
+                                tỉnh Bình Dương. Sở hữu vị trí đắc địa ngay mặt tiền Quốc lộ 13 – tuyến giao thông huyết
+                                mạch
+                                bậc nhất khu vực, căn hộ Symlife không chỉ thuận lợi di chuyển nội khu mà còn mở rộng
+                                kết
+                                nối
+                                nhanh chóng đến TP.HCM và các vùng kinh tế trọng điểm phía Nam.</p>
 
-                        <p>Tọa lạc trực tiếp trên mặt tiền Quốc lộ 13 Phường Vĩnh Phú, TP. Thuận An, Tỉnh Bình Dương, dự
-                            án
-                            Symlife Thuận An được hưởng trọn ưu thế từ hạ tầng giao thông phát triển đồng bộ. Dự án kết
-                            nối
-                            thuận tiện với hàng loạt tuyến đường trọng điểm như:</p>
+                            <p>Tọa lạc trực tiếp trên mặt tiền Quốc lộ 13 Phường Vĩnh Phú, TP. Thuận An, Tỉnh Bình
+                                Dương, dự
+                                án
+                                Symlife Thuận An được hưởng trọn ưu thế từ hạ tầng giao thông phát triển đồng bộ. Dự án
+                                kết
+                                nối
+                                thuận tiện với hàng loạt tuyến đường trọng điểm như:</p>
 
-                        <ul>
-                            <li>Hà Huy Giáp (Quận 12)</li>
-                            <li>Phạm Văn Đồng (trục xương sống nối liền Đông – Tây TP.HCM)</li>
-                            <li>Nguyễn Oanh (Gò Vấp)</li>
-                            <li> Nhờ đó, cư dân Symlife dễ dàng tiếp cận các khu vực trung tâm như quận 1, quận 2, quận
-                                3 chỉ
-                                trong khoảng 30 phút di chuyển, mở ra cơ hội sinh sống, học tập, làm việc và giải trí lý
-                                tưởng
-                                cho cư dân tương lai.</li>
-                        </ul>
-                        <div class="absolute -top-24 -right-10 z-0">
-                            <img class="h-40" src="images/phoi-canh-symlife.jpg" alt="" srcset="">
+                            <ul>
+                                <li>Hà Huy Giáp (Quận 12)</li>
+                                <li>Phạm Văn Đồng (trục xương sống nối liền Đông – Tây TP.HCM)</li>
+                                <li>Nguyễn Oanh (Gò Vấp)</li>
+                                <li> Nhờ đó, cư dân Symlife dễ dàng tiếp cận các khu vực trung tâm như quận 1, quận 2,
+                                    quận
+                                    3 chỉ
+                                    trong khoảng 30 phút di chuyển, mở ra cơ hội sinh sống, học tập, làm việc và giải
+                                    trí lý
+                                    tưởng
+                                    cho cư dân tương lai.</li>
                         </div>
-                        <div class="absolute -bottom-40 left-10 z-0">
+                        </ul>
+                        <div class="absolute -top-16 lg:-top-24 right-0 lg:-right-10 z-0">
+                            <img class="h-36 lg:h-40" src="images/phoi-canh-symlife.jpg" alt="" srcset="">
+                        </div>
+                        <div class="hidden lg:block absolute -bottom-40 left-10 z-0">
                             <img class="h-36" src="images/phoi-canh-symlife.jpg" alt="" srcset="">
                         </div>
                     </div>
@@ -677,7 +732,6 @@
                     border-radius: 5px;
                     z-index: 100;
                     pointer-events: none;
-                    /* Rất quan trọng để không bị lỗi flicker */
                 }
             </style>
 
@@ -691,51 +745,84 @@
                     </a>
 
                 </svg>
-                <div class="absolute bottom-36 left-36 bg-cyan-100/20 shadow-inner p-4 rounded-md">
+                <div class="lg:absolute lg:bottom-36 lg:left-36 bg-cyan-100/20 shadow-inner p-4 rounded-md">
                     <div class="grid grid-cols-2 gap-4">
-                        <div class="text-lora text-xl px-4 py-2 flex gap-2 items-center"><div class="h-12 w-12 bg-teal-500 rounded-sm"></div>Căn hộ hai phòng ngủ</div>
-                        <div class="text-lora text-xl px-4 py-2 flex gap-2 items-center"><div class="h-12 w-12 bg-teal-500 rounded-sm"></div>Căn hộ hai phòng ngủ</div>
-                        <div class="text-lora text-xl px-4 py-2 flex gap-2 items-center"><div class="h-12 w-12 bg-teal-500 rounded-sm"></div>Căn hộ hai phòng ngủ</div>
-                        <div class="text-lora text-xl px-4 py-2 flex gap-2 items-center"><div class="h-12 w-12 bg-teal-500 rounded-sm"></div>Căn hộ hai phòng ngủ</div>
+                        <div class="text-lora text-xs lg:text-xl  px-4 py-2 flex gap-2 items-center">
+                            <div class="h-8 w-8 bg-teal-500 rounded-sm"></div>Căn hộ hai phòng ngủ
+                        </div>
+                        <div class="text-lora text-xs lg:text-xl  px-4 py-2 flex gap-2 items-center">
+                            <div class="h-8 w-8 bg-teal-500 rounded-sm"></div>Căn hộ hai phòng ngủ
+                        </div>
+                        <div class="text-lora text-xs lg:text-xl  px-4 py-2 flex gap-2 items-center">
+                            <div class="h-8 w-8 bg-teal-500 rounded-sm"></div>Căn hộ hai phòng ngủ
+                        </div>
+                        <div class="text-lora text-xs lg:text-xl  px-4 py-2 flex gap-2 items-center">
+                            <div class="h-8 w-8 bg-teal-500 rounded-sm"></div>Căn hộ hai phòng ngủ
+                        </div>
                     </div>
                 </div>
             </div>
-            <div id="info-popup" class="info-popup bg-blue-200/80 rounded-xl" style="display: none; position: absolute;">
+            <div id="info-popup" class="info-popup bg-blue-200/80 rounded-xl"
+                style="display: none; position: absolute;">
                 Nội dung popup ở đây!
             </div>
         </div>
 
-        <!-- <div class="text-lora max-w-xs">
-            <strong class="text-lg font-bold">Khu vực A</strong>
-            <p class="text-sm">Lorem, ipsum dolor</p>
-            <p class="text-sm">Lorem, ipsum dolor</p>
-            <p class="text-sm">Lorem, ipsum dolor</p>
-            <p class="text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium ab porro sit praesentium quis, provident reiciendis numquam ut fugiat vel maiores dicta suscipit doloremque ad dignissimos iure, animi incidunt ipsa?</p>
-            <img class="w-full" src="images/phoi-canh-symlife.jpg" alt="" srcset="">
-        </div> -->
 
 
-        <div class="h-screen">
-            <div class="h-full grid grid-cols-1 lg:grid-cols-3 mt-4">
-                <img src="images/matbang-symlife-1-xb.png" class="h-full" alt="" srcset="">
-                <div class="text-lora flex flex-col gap-4 pt-8">
-                    <div>
-                        <h3 class="text-2xl font-bold">CĂN HỘ LOẠI A</h3>
-                        <p class="text-sm text-gray-400">01 PHÒNG NGỦ</p>
+        <div class="lg:h-screen mt-4">
+            <div class="h-full flex flex-col justify-center items-center gap-2 lg:grid lg:grid-cols-3 mt-4">
+                <img src="images/matbang-symlife-1-xb.png" class="mx-auto h-auto lg:h-full w-3/4" alt="" srcset="">
+                <div class="col-span-2 text-lora flex flex-col gap-4 pt-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-0">
+                        <div>
+                            <div>
+                                <h3 class="text-2xl font-bold">CĂN HỘ LOẠI A</h3>
+                                <p class="text-sm text-gray-400">01 PHÒNG NGỦ</p>
+                            </div>
+                            <div class="flex lg:flex-col">
+                                <ul class="text-sm lg:text-md">
+                                    <li>DIỆN TÍCH TIM TƯỜNG: 54.1 m²</li>
+                                    <li>DIỆN TÍCH THÔNG THỦY: 48.4 m²</li>
+                                    <li>PHÒNG KHÁCH + BẾP: 30.2 m²</li>
+                                    <li>PHÒNG NGỦ: 11.0 m²</li>
+                                    <li>WC: 02.9 m²</li>
+                                    <li>LÔ GIA: 02.7 m²</li>
+                                </ul>
+                                <div class="w-3/4 mx-auto">
+                                    <img class="w-full object-cover drop-shadow-lg drop-shadow-cyan-500/50"
+                                        src="images/matbang-symlife-1-mb-Photoroom.png" alt="" srcset="">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="h-full w-full px-4 lg:pr-12 flex flex-col justify-center">
+                            <div class="swiper vertical-swiper h-[30vh] lg:h-[60vh] w-full">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="h-auto lg:h-[60vh] w-full">
+                                            <img class="h-full object-cover drop-shadow-lg drop-shadow-cyan-500/50 lg:rounded-r-xl"
+                                                src="images/phoi-canh-symlife.jpg" alt="" srcset="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="h-auto lg:h-[60vh] w-full">
+                                            <img class="h-full object-cover drop-shadow-lg drop-shadow-cyan-500/50 lg:rounded-r-xl"
+                                                src="images/phoi-canh-symlife.jpg" alt="" srcset="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="h-auto lg:h-[60vh] w-full">
+                                            <img class="h-full object-cover drop-shadow-lg drop-shadow-cyan-500/50 lg:rounded-r-xl"
+                                                src="images/phoi-canh-symlife.jpg" alt="" srcset="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
                     </div>
-                    <ul class="text-md">
-                        <li>DIỆN TÍCH TIM TƯỜNG: 54.1 m²</li>
-                        <li>DIỆN TÍCH THÔNG THỦY: 48.4 m²</li>
-                        <li>PHÒNG KHÁCH + BẾP: 30.2 m²</li>
-                        <li>PHÒNG NGỦ: 11.0 m²</li>
-                        <li>WC: 02.9 m²</li>
-                        <li>LÔ GIA: 02.7 m²</li>
-                    </ul>
-                    <div class="w-3/4 mx-auto">
-                        <img class="w-full object-cover drop-shadow-lg drop-shadow-cyan-500/50"
-                            src="images/matbang-symlife-1-mb-Photoroom.png" alt="" srcset="">
-                    </div>
-                    <p class="text-sm text-justify px-2">
+                    <p class="text-sm lg:text-lg text-justify px-2 pr-0 lg:pr-8 text-gray-600 shadow-inner shadow-amber-200/60 p-1 lg:p-4">
                         "Khám phá Căn hộ Loại A - 01 Phòng Ngủ, một không gian sống lý tưởng được thiết kế tối ưu cho
                         cuộc
                         sống hiện đại. Với diện tích tim tường 54.1 m² và diện tích thông thủy 48.4 m², từng mét vuông
@@ -750,50 +837,174 @@
                         hoạt."
                     </p>
                 </div>
-                <div class="h-full w-full pr-12 flex flex-col justify-center">
-                    <div class="carousel-container w-full h-[90vh] border border-gray-300 shadow-lg rounded-lg">
-                        <div class="carousel-wrapper">
-                            <div class="carousel-slide bg-red-400 text-white"><img src="images/phoi-canh-symlife.jpg"
-                                    alt="Image 1">
+            </div>
+        </div>
+
+
+
+
+
+        <div class="lg:h-screen mt-4">
+            <div class="h-full flex flex-col justify-center items-center gap-2 lg:grid lg:grid-cols-3 mt-4">
+                <img src="images/matbang-symlife-1-xb.png" class="mx-auto h-auto lg:h-full w-3/4" alt="" srcset="">
+                <div class="col-span-2 text-lora flex flex-col gap-4 pt-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-0">
+                        <div>
+                            <div>
+                                <h3 class="text-2xl font-bold">CĂN HỘ LOẠI A</h3>
+                                <p class="text-sm text-gray-400">01 PHÒNG NGỦ</p>
                             </div>
-                            <div class="carousel-slide bg-blue-400 text-white"><img src="images/phoi-canh-symlife.jpg"
-                                    alt="Image 2">
+                            <div class="flex lg:flex-col">
+                                <ul class="text-sm lg:text-md">
+                                    <li>DIỆN TÍCH TIM TƯỜNG: 54.1 m²</li>
+                                    <li>DIỆN TÍCH THÔNG THỦY: 48.4 m²</li>
+                                    <li>PHÒNG KHÁCH + BẾP: 30.2 m²</li>
+                                    <li>PHÒNG NGỦ: 11.0 m²</li>
+                                    <li>WC: 02.9 m²</li>
+                                    <li>LÔ GIA: 02.7 m²</li>
+                                </ul>
+                                <div class="w-3/4 mx-auto">
+                                    <img class="w-full object-cover drop-shadow-lg drop-shadow-cyan-500/50"
+                                        src="images/matbang-symlife-1-mb-Photoroom.png" alt="" srcset="">
+                                </div>
                             </div>
-                            <div class="carousel-slide bg-green-400 text-white"><img src="images/phoi-canh-symlife.jpg"
-                                    alt="Image 3">
-                            </div>
-                            <div class="carousel-slide bg-yellow-400 text-white"><img src="images/phoi-canh-symlife.jpg"
-                                    alt="Image 4">
-                            </div>
-                            <div class="carousel-slide bg-purple-400 text-white"><img src="images/phoi-canh-symlife.jpg"
-                                    alt="Image 5">
+
+                        </div>
+                        <div class="h-full w-full px-4 lg:pr-12 flex flex-col justify-center">
+                            <div class="swiper vertical-swiper-first h-[30vh] lg:h-[60vh] w-full">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="h-auto lg:h-[60vh] w-full">
+                                            <img class="h-full object-cover drop-shadow-lg drop-shadow-cyan-500/50 lg:rounded-r-xl"
+                                                src="images/phoi-canh-symlife.jpg" alt="" srcset="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="h-auto lg:h-[60vh] w-full">
+                                            <img class="h-full object-cover drop-shadow-lg drop-shadow-cyan-500/50 lg:rounded-r-xl"
+                                                src="images/phoi-canh-symlife.jpg" alt="" srcset="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="h-auto lg:h-[60vh] w-full">
+                                            <img class="h-full object-cover drop-shadow-lg drop-shadow-cyan-500/50 lg:rounded-r-xl"
+                                                src="images/phoi-canh-symlife.jpg" alt="" srcset="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
                             </div>
                         </div>
-                        <button
-                            class="carousel-button prev bg-black bg-opacity-50 hover:bg-opacity-75 text-white p-3 rounded-full text-lg">↑</button>
-                        <button
-                            class="carousel-button next bg-black bg-opacity-50 hover:bg-opacity-75 text-white p-3 rounded-full text-lg">↓</button>
                     </div>
+                    <p class="text-sm lg:text-lg text-justify px-2 pr-0 lg:pr-8 text-gray-600 shadow-inner shadow-amber-200/60 p-1 lg:p-4">
+                        "Khám phá Căn hộ Loại A - 01 Phòng Ngủ, một không gian sống lý tưởng được thiết kế tối ưu cho
+                        cuộc
+                        sống hiện đại. Với diện tích tim tường 54.1 m² và diện tích thông thủy 48.4 m², từng mét vuông
+                        đều
+                        được khai thác hiệu quả. Nổi bật là không gian Phòng Khách + Bếp rộng rãi 30.2 m², tạo nên một
+                        khu
+                        vực sinh hoạt chung ấm cúng và tiện nghi, nơi bạn có thể thoải mái thư giãn hoặc chuẩn bị bữa
+                        ăn.
+                        Phòng Ngủ 11.0 m² mang đến sự riêng tư, trong khi Lô Gia 02.7 m² là góc nhỏ lý tưởng để đón nắng
+                        sớm
+                        hay ngắm cảnh hoàng hôn. Khu vực WC 02.9 m² được bố trí hợp lý, đảm bảo sự thoải mái trong sinh
+                        hoạt."
+                    </p>
                 </div>
             </div>
         </div>
+
+
+
+
+        
+        <div class="lg:h-screen mt-4">
+            <div class="h-full flex flex-col justify-center items-center gap-2 lg:grid lg:grid-cols-3 mt-4">
+                <img src="images/matbang-symlife-1-xb.png" class="mx-auto h-auto lg:h-full w-3/4" alt="" srcset="">
+                <div class="col-span-2 text-lora flex flex-col gap-4 pt-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-0">
+                        <div>
+                            <div>
+                                <h3 class="text-2xl font-bold">CĂN HỘ LOẠI A</h3>
+                                <p class="text-sm text-gray-400">01 PHÒNG NGỦ</p>
+                            </div>
+                            <div class="flex lg:flex-col">
+                                <ul class="text-sm lg:text-md">
+                                    <li>DIỆN TÍCH TIM TƯỜNG: 54.1 m²</li>
+                                    <li>DIỆN TÍCH THÔNG THỦY: 48.4 m²</li>
+                                    <li>PHÒNG KHÁCH + BẾP: 30.2 m²</li>
+                                    <li>PHÒNG NGỦ: 11.0 m²</li>
+                                    <li>WC: 02.9 m²</li>
+                                    <li>LÔ GIA: 02.7 m²</li>
+                                </ul>
+                                <div class="w-3/4 mx-auto">
+                                    <img class="w-full object-cover drop-shadow-lg drop-shadow-cyan-500/50"
+                                        src="images/matbang-symlife-1-mb-Photoroom.png" alt="" srcset="">
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="h-full w-full px-4 lg:pr-12 flex flex-col justify-center">
+                            <div class="swiper vertical-swiper-second h-[30vh] lg:h-[60vh] w-full">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="h-auto lg:h-[60vh] w-full">
+                                            <img class="h-full object-cover drop-shadow-lg drop-shadow-cyan-500/50 lg:rounded-r-xl"
+                                                src="images/phoi-canh-symlife.jpg" alt="" srcset="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="h-auto lg:h-[60vh] w-full">
+                                            <img class="h-full object-cover drop-shadow-lg drop-shadow-cyan-500/50 lg:rounded-r-xl"
+                                                src="images/phoi-canh-symlife.jpg" alt="" srcset="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="h-auto lg:h-[60vh] w-full">
+                                            <img class="h-full object-cover drop-shadow-lg drop-shadow-cyan-500/50 lg:rounded-r-xl"
+                                                src="images/phoi-canh-symlife.jpg" alt="" srcset="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-sm lg:text-lg text-justify px-2 pr-0 lg:pr-8 text-gray-600 shadow-inner shadow-amber-200/60 p-1 lg:p-4">
+                        "Khám phá Căn hộ Loại A - 01 Phòng Ngủ, một không gian sống lý tưởng được thiết kế tối ưu cho
+                        cuộc
+                        sống hiện đại. Với diện tích tim tường 54.1 m² và diện tích thông thủy 48.4 m², từng mét vuông
+                        đều
+                        được khai thác hiệu quả. Nổi bật là không gian Phòng Khách + Bếp rộng rãi 30.2 m², tạo nên một
+                        khu
+                        vực sinh hoạt chung ấm cúng và tiện nghi, nơi bạn có thể thoải mái thư giãn hoặc chuẩn bị bữa
+                        ăn.
+                        Phòng Ngủ 11.0 m² mang đến sự riêng tư, trong khi Lô Gia 02.7 m² là góc nhỏ lý tưởng để đón nắng
+                        sớm
+                        hay ngắm cảnh hoàng hôn. Khu vực WC 02.9 m² được bố trí hợp lý, đảm bảo sự thoải mái trong sinh
+                        hoạt."
+                    </p>
+                </div>
+            </div>
+        </div>
+
 
         <div class="relative text-lora">
             <div class="w-full">
                 <div class="max-w-6xl mx-auto flex flex-col gap-8 shadow-inner bg-cyan-500/60 rounded-2xl px-4 py-4">
                     <div class="flex items-center gap-0 mx-auto">
-                        <div class="w-36"><img src="images/flower left.png" alt=""></div>
+                        <div class="w-24 lg:w-36"><img src="images/flower left.png" alt=""></div>
                         <div>
-                            <h2 class="text-5xl text-center font-bold text-amber-600 uppercase">BOOKING ngay</h2>
-                            <p class="text-center mt-1 text-2xl font-bold text-blue-500 text-shadow-2xs uppercase">Nhận
+                            <h2 class="text-2xl lg:text-5xl text-center font-bold text-amber-600 uppercase">BOOKING ngay
+                            </h2>
+                            <p
+                                class="text-center mt-1 text-md lg:text-2xl font-bold text-blue-500 text-shadow-2xs uppercase">
+                                Nhận
                                 ngàn ưu đãi</p>
                         </div>
-                        <div class="w-36"><img src="images/flower right.png" alt=""></div>
+                        <div class="w-24 lg:w-36"><img src="images/flower right.png" alt=""></div>
                     </div>
-                    <p class="text-sm">“Booking Ngay” là tính năng cho phép khách hàng nhanh chóng giữ chỗ hoặc đặt cọc
-                        trước cho sản phẩm bất động sản (căn hộ, nhà phố, đất nền...) chỉ với vài thao tác đơn giản,
-                        giúp tiết kiệm thời gian và đảm bảo quyền lợi trong quá trình giao dịch.</p>
-                    <form class="grid grid-cols-3 gap-4">
+                    <form class="grid grid-cols-1 lg:grid-cols-3 gap-4">
                         <div>
                             <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
                                 email</label>
@@ -823,6 +1034,41 @@
         </div>
 
     </main>
+
+    <script>
+        const swiper = new Swiper('.vertical-swiper', {
+            direction: 'vertical',
+            slidesPerView: 1,
+            spaceBetween: 10,
+            mousewheel: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+        const swiperFirst = new Swiper('.vertical-swiper-first', {
+            direction: 'vertical',
+            slidesPerView: 1,
+            spaceBetween: 10,
+            mousewheel: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+        const swiperSecond = new Swiper('.vertical-swiper-second', {
+            direction: 'vertical',
+            slidesPerView: 1,
+            spaceBetween: 10,
+            mousewheel: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
     <script>
 
         // Core
@@ -961,68 +1207,6 @@
         });
 
     </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const container = document.querySelector('.carousel-container');
-            const wrapper = document.querySelector('.carousel-wrapper');
-            const slides = document.querySelectorAll('.carousel-slide');
-            const prevButton = document.querySelector('.carousel-button.prev');
-            const nextButton = document.querySelector('.carousel-button.next');
-
-            let currentIndex = 0;
-            const slideHeight = slides[0].clientHeight; // Lấy chiều cao của một slide
-
-            // Hàm để cập nhật vị trí của carousel
-            function updateCarousel() {
-                wrapper.style.transform = `translateY(${-currentIndex * slideHeight}px)`;
-            }
-
-            // Xử lý nút "Previous"
-            prevButton.addEventListener('click', () => {
-                currentIndex--;
-                if (currentIndex < 0) {
-                    currentIndex = slides.length - 1; // Cuộn về slide cuối nếu đang ở slide đầu
-                }
-                updateCarousel();
-            });
-
-            // Xử lý nút "Next"
-            nextButton.addEventListener('click', () => {
-                currentIndex++;
-                if (currentIndex >= slides.length) {
-                    currentIndex = 0; // Cuộn về slide đầu nếu đang ở slide cuối
-                }
-                updateCarousel();
-            });
-
-            // Tự động cuộn (tùy chọn)
-            let autoScrollInterval;
-            function startAutoScroll() {
-                autoScrollInterval = setInterval(() => {
-                    nextButton.click(); // Mô phỏng click vào nút next
-                }, 3000); // Cuộn mỗi 3 giây
-            }
-
-            function stopAutoScroll() {
-                clearInterval(autoScrollInterval);
-            }
-
-            // Bắt đầu tự động cuộn khi tải trang
-            startAutoScroll();
-
-            // Dừng tự động cuộn khi hover vào carousel
-            container.addEventListener('mouseenter', stopAutoScroll);
-            container.addEventListener('mouseleave', startAutoScroll);
-
-            // Xử lý khi kích thước cửa sổ thay đổi (để chiều cao slide đúng)
-            window.addEventListener('resize', () => {
-                // Cập nhật lại slideHeight nếu cần (ví dụ, nếu chiều cao container thay đổi theo responsive)
-                // Đối với ví dụ này, slideHeight là cố định 480px, nên không cần cập nhật lại ngay
-                updateCarousel(); // Đảm bảo vị trí vẫn đúng
-            });
-        });
-    </script>
-
     <script>
         const hoverArea = document.getElementById('hover-area-1');
         const popup = document.getElementById('info-popup');
